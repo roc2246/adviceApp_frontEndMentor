@@ -4,7 +4,9 @@
   "description": "![Design preview for the Advice generator app coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "compile:sass": "node-sass public/sass/style.scss public/css/style.css -w"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +15,7 @@
     "express": "^4.18.1"
   },
   "devDependencies": {
+    "nodemon": "^2.0.16",
     "sass": "^1.51.0"
   }
 }
