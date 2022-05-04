@@ -29,10 +29,11 @@ svg {
     font-size: 1.75rem;
     color: #cfe4e9;
     text-align: center;
-    line-height: 2.75rem; }
+    line-height: 2.75rem;
+    margin-top: auto;
+    margin-bottom: auto; }
   #card #divider-desktop {
-    position: absolute;
-    bottom: 4.5rem; }
+    margin-bottom: 2rem; }
   #card #divider-mobile {
     display: none; }
   #card #newAdvice {
@@ -59,10 +60,9 @@ svg {
   #card {
     margin-top: 10rem;
     width: 18rem;
-    min-height: 27rem; }
+    min-height: 24rem; }
     #card #divider-desktop {
       display: none; }
     #card #divider-mobile {
       display: inline;
-      position: absolute;
-      bottom: 4.5rem; } }
+      margin-bottom: 2rem; } }

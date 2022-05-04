@@ -43,11 +43,12 @@ svg {
     color: $fontColor;
     text-align: center;
     line-height: 2.75rem;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 
   #divider-desktop {
-    position: absolute;
-    bottom: 4.5rem;
+    margin-bottom: 2rem;
   }
 
   #divider-mobile {
@@ -84,15 +85,14 @@ svg {
   #card {
     margin-top: 10rem;
     width: 18rem;
-    min-height: 27rem;
+    min-height: 24rem;
     #divider-desktop {
       display: none;
     }
 
     #divider-mobile {
       display: inline;
-      position: absolute;
-      bottom: 4.5rem;
+      margin-bottom: 2rem;
     }
   }
 }
