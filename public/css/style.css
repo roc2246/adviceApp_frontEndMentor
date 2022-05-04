@@ -9,7 +9,7 @@ svg {
 #card {
   background-color: #313b47;
   width: 35rem;
-  height: 20rem;
+  min-height: 20rem;
   position: relative;
   margin: auto;
   margin-top: 25vh;
@@ -23,14 +23,16 @@ svg {
     font-weight: lighter;
     text-transform: uppercase;
     letter-spacing: 0.25rem;
-    font-stretch: condensed; }
+    font-stretch: condensed;
+    margin: 0rem; }
   #card #advice {
-    font-size: 2rem;
+    font-size: 1.75rem;
     color: #cfe4e9;
-    text-align: center; }
+    text-align: center;
+    line-height: 2.75rem; }
   #card #divider-desktop {
     position: absolute;
-    top: 18.5rem; }
+    bottom: 4.5rem; }
   #card #divider-mobile {
     display: none; }
   #card #newAdvice {
@@ -55,11 +57,12 @@ svg {
 
 @media only screen and (max-width: 390px) {
   #card {
-    /*  width: 16rem;
-      height: auto; */ }
+    margin-top: 10rem;
+    width: 18rem;
+    min-height: 27rem; }
     #card #divider-desktop {
       display: none; }
     #card #divider-mobile {
       display: inline;
       position: absolute;
-      top: 18.5rem; } }
+      bottom: 4.5rem; } }

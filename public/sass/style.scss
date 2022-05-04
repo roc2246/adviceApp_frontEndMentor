@@ -17,7 +17,7 @@ svg {
 #card {
   background-color: $backgroundColor_card;
   width: 35rem;
-  height: 20rem;
+  min-height: 20rem;
   position: relative;
   margin: auto;
   margin-top: 25vh;
@@ -35,17 +35,19 @@ svg {
     text-transform: uppercase;
     letter-spacing: 0.25rem;
     font-stretch: condensed;
+    margin: 0rem;
   }
 
   #advice {
-    font-size: 2rem;
+    font-size: 1.75rem;
     color: $fontColor;
     text-align: center;
+    line-height: 2.75rem;
   }
 
   #divider-desktop {
     position: absolute;
-    top: 18.5rem;
+    bottom: 4.5rem;
   }
 
   #divider-mobile {
@@ -79,18 +81,18 @@ svg {
 }
 
 @media only screen and (max-width: 390px) {
-    #card {
-     /*  width: 16rem;
-      height: auto; */
+  #card {
+    margin-top: 10rem;
+    width: 18rem;
+    min-height: 27rem;
+    #divider-desktop {
+      display: none;
+    }
 
-      #divider-desktop {
-          display: none;
-      }
-
-      #divider-mobile {
-        display: inline;
-        position: absolute;
-        top: 18.5rem;
-      }
+    #divider-mobile {
+      display: inline;
+      position: absolute;
+      bottom: 4.5rem;
     }
   }
+}
