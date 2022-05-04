@@ -1,0 +1,64 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  background-color: #202632; }
+
+svg {
+  overflow: visible; }
+
+#card {
+  background-color: #313b47;
+  width: 35rem;
+  height: 20rem;
+  position: relative;
+  margin: auto;
+  margin-top: 25vh;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  #card #heading {
+    color: #53ffa9;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    font-stretch: condensed; }
+  #card #advice {
+    font-size: 2rem;
+    color: #cfe4e9;
+    text-align: center; }
+  #card #divider-desktop {
+    position: absolute;
+    top: 18.5rem; }
+  #card #divider-mobile {
+    display: none; }
+  #card #newAdvice {
+    position: absolute;
+    bottom: -1.85rem;
+    border-radius: 50%;
+    width: 3.75rem;
+    height: 3.75rem;
+    background-color: #53ffa9;
+    border: none;
+    padding-top: 0.25rem; }
+    #card #newAdvice:hover {
+      cursor: pointer; }
+    #card #newAdvice:active {
+      box-shadow: 0rem 0rem 1.5rem white; }
+
+.attribution {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 3rem; }
+
+@media only screen and (max-width: 390px) {
+  #card {
+    width: 16rem; }
+    #card #divider-desktop {
+      display: none; }
+    #card #divider-mobile {
+      display: inline;
+      position: absolute;
+      top: 19rem; } }
