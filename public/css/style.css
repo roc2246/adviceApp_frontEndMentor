@@ -35,7 +35,7 @@ svg {
     display: none; }
   #card #newAdvice {
     position: absolute;
-    bottom: -1.85rem;
+    bottom: -2rem;
     border-radius: 50%;
     width: 3.75rem;
     height: 3.75rem;
@@ -55,10 +55,11 @@ svg {
 
 @media only screen and (max-width: 390px) {
   #card {
-    width: 16rem; }
+    /*  width: 16rem;
+      height: auto; */ }
     #card #divider-desktop {
       display: none; }
     #card #divider-mobile {
       display: inline;
       position: absolute;
-      top: 19rem; } }
+      top: 18.5rem; } }

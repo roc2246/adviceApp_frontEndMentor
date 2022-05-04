@@ -1,16 +1,14 @@
 //Source : https://api.adviceslip.com/
 const adviceNo = document.getElementById("heading_no");
-const advice = document.getElementById("advice_innerText");
-const url = "https://api.adviceslip.com/advice";
+const adviceTxt = document.getElementById("advice_innerText");
 
 const newAdvice = () => {
-  fetch(url)
+  fetch("https://api.adviceslip.com/advice")
     .then((response) => response.json())
     .then((data) => {
-      let no = data.slip.id;
-      let mssg = data.slip.advice;
+      const {id, advice} = data.slip;
 
-      adviceNo.innerText = no;
-      advice.innerText = mssg;
+      adviceNo.innerText = id;
+      adviceTxt.innerText = advice;
     });
 };
